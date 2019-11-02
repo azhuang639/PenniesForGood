@@ -1,6 +1,7 @@
 body {
     width: 320px;
     height: 400px;
+    background-color: #fff1e3;
 }
 
 header {
@@ -76,6 +77,7 @@ p {
     border-radius: 8px;
     -webkit-transition-duration: 0.6s;
     transition-duration: 0.6s;
+    cursor: pointer;
 }
 
 .pause:hover {
@@ -97,6 +99,7 @@ p {
     border-radius: 8px;
     -webkit-transition-duration: 0.6s;
     transition-duration: 0.6s;
+    cursor: pointer;
 }
 
 .resume:hover {
