@@ -13,7 +13,7 @@ function closeWindow(){
     document.getElementsByTagName('body')[0].append(buyChecked);
 }
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     var submitLink = document.getElementById('submitButton');
     submitLink.onclick = function() {
         var value = document.getElementById('userInput').value;
@@ -33,4 +33,4 @@ window.onload = function() {
             alert(data.myLine);
         })
     }
-}
+});

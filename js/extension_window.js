@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-window.onload = function() {
-    this.document.getElementById('save').onclick = function() {
-        var value = documemnt.getElementById('saveLine').value;
-        //alert(value);
-
-        chrome.storage.sync.set({'myLine': value}, function() {
-            alert('success')
-        });
-
-        //chrome.storage.sync.get({
-        //    'yourKEYNAME' : 'YOUR KEY VALUE'
-        //});
-    }
-
-    document.getElementById('get').onclick = function() {
-        chrome.storage.sync.get('myLine', function(data) {
-            alert(data.myLine);
-        })
-    }
-}
-=======
 let active;
 chrome.storage.local.get({active: true}, function(result) {
     active = result.active;
@@ -59,4 +37,3 @@ function loading(element) {
         element.innerHTML = "Resume Extension";
     }
 }
->>>>>>> 351898b3f416c2099ddfaa1b118c509e33489557
