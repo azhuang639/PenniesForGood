@@ -1,4 +1,5 @@
 function startup(x){
+    document.getElementById('buy_logo').src = chrome.extension.getURL('assets/penny.png');
     document.getElementById("no_donate").addEventListener('click', closeWindow);
 }
 
@@ -13,24 +14,24 @@ function closeWindow(){
     document.getElementsByTagName('body')[0].append(buyChecked);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var submitLink = document.getElementById('submitButton');
-    submitLink.onclick = function() {
-        var value = document.getElementById('userInput').value;
-        //alert(value);
-
-        chrome.storage.sync.set({'myLine': value}, function() {
-            alert('success')
-        });
-
-        //chrome.storage.sync.get({
-        //    'yourKEYNAME' : 'YOUR KEY VALUE'
-        //});
-    }
-
-    document.getElementById('get').onclick = function() {
-        chrome.storage.sync.get('myLine', function(data) {
-            alert(data.myLine);
-        })
-    }
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var submitLink = document.getElementById('submitButton');
+//     submitLink.onclick = function() {
+//         var value = document.getElementById('userInput').value;
+//         //alert(value);
+//
+//         chrome.storage.sync.set({'myLine': value}, function() {
+//             alert('success')
+//         });
+//
+//         //chrome.storage.sync.get({
+//         //    'yourKEYNAME' : 'YOUR KEY VALUE'
+//         //});
+//     }
+//
+//     document.getElementById('get').onclick = function() {
+//         chrome.storage.sync.get('myLine', function(data) {
+//             alert(data.myLine);
+//         })
+//     }
+// });
