@@ -3,9 +3,38 @@ body {
     height: 500px;
 }
 
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+    margin-left: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: -25px;
+}
+
+
+
 .title {
     text-align: center;
     color: red;
+    font-family: "Times new Roman", Times serif;
+    font-size: 30px
 }
 
 .pic {
