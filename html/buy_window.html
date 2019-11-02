@@ -5,12 +5,28 @@
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pennies For Good</title>
-    <link rel="stylesheet" href="../css/buy.css">
-    <script src="../js/buy.js"></script>
+    <link rel="stylesheet" href="../css/buy_window.css">
+    <script src="../js/buy_window.js"></script>
 </head>
 
 <body>
-<h1 class="title">hey</h1>
+<div class="header">
+    <h1>Header</h1>
+    <p>My supercool header</p>
+</div>
+<div class="content">
+    <h1 class="title">hey</h1>
+    <!--<img src = "../assets/penny.png" alt="logo">-->
+    <h2 class="body1">Spare Some Pennies?</h2>
+    <h2 id="current_amount"></h2>
+    <h2 id="rounded_amount"></h2>
+    <button class="button">Yes</button><br><br>
+    <button class="button">No</button>
+</div>
+<script>
+    document.getElementById("current_amount").innerHTML = "$2.75";
+    document.getElementById("rounded_amount").innerHTML = "$3.00";
+</script>
 
 </body>
 </html>
