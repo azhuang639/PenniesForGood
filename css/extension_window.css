@@ -133,7 +133,7 @@ p {
     text-align: center;
     font-family: "Gill Sans MT";
     font-size: 13px;
-    margin: 0 auto;
+    margin: auto 10px;
     border-radius: 8px;
     -webkit-transition-duration: 0.6s;
     transition-duration: 0.6s;
