@@ -17,7 +17,7 @@
   ],
   "browser_action": {
     "default_icon": "assets/penny.png",
-    "default_popup": "html/popup.html"
+    "default_popup": "html/extension_window.html"
   },
   "permissions": [
     "tabs",
@@ -25,7 +25,7 @@
     "storage"
   ],
   "web_accessible_resources": [
-    "html/window.html",
+    "html/buy_window.html",
     "assets/penny.png"
   ]
 }
