@@ -33,8 +33,8 @@ header li {
 .title {
     margin-top: 50px;
     text-align: center;
-    color: red;
-    font-family: "Times new Roman", Times serif;
+    color: saddlebrown;
+    font-family: "Bradley Hand ITC";
     font-size: 30px
 }
 
@@ -124,6 +124,15 @@ p {
     font-weight: bold;
 }
 
-button:focus {
-    outline: none;
+.button {
+    background-color: aqua;
+    border: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: cornflowerblue;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
 }
