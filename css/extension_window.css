@@ -125,14 +125,22 @@ p {
 }
 
 .button {
-    background-color: aqua;
-    border: blue;
-    color: white;
-    padding: 15px 32px;
+    background-color: white;
+    border: 1px solid darkblue;
+    color: darkblue;
+    padding: 8px;
+    width: 300px;
     text-align: center;
-    text-decoration: cornflowerblue;
-    display: inline-block;
-    font-size: 16px;
+    font-family: "Gill Sans MT";
+    font-size: 13px;
     margin: 0 auto;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: darkblue;
+    color: white;
 }
