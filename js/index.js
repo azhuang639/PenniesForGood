@@ -48,6 +48,7 @@ function trackPurchase() {
             if (active && !document.getElementById('buy-checked')) {
                 e.preventDefault();
                 insertWindow();
+                console.log("hi");
             }
         });
     }
@@ -57,6 +58,17 @@ function insertWindow() {
     fetch(chrome.extension.getURL('html/buy_window.html'))
         .then(response => response.text())
         .then(data => {
+            const body = document.getElementsByTagName('body')[0];
+            const window = document.createElement('div');
+            window.className = 'buy-window';
+            window.id = 'buy-window';
+            window.innerHTML = data;
+            body.append(window);
+
+            const overlay = document.createElement('div');
+            overlay.className = 'buy-overlay';
+            overlay.id = 'buy-overlay';
+            body.append(overlay);
         }).catch(err => {
         console.log('Error loading Buy window:' + err)
     });
