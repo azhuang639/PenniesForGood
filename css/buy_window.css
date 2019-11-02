@@ -1,13 +1,21 @@
-/*
-Font classes for html
- */
 .title {
+    margin-top: 50px;
     text-align: center;
-    color: red;
+    color: saddlebrown;
+    font-family: "Bradley Hand ITC";
+    font-size: 30px
 }
-.body1 {
+.spare {
     text-align: center;
     color: #9CEBF2;
+    font-size: 30px
+}
+.description {
+    text-align: center;
+    font-size: 40px
+}
+.money {
+    text-align: center;
 }
 .button {
     background-color: #9CEBF2;
@@ -20,11 +28,13 @@ Font classes for html
     font-size: 16px;
 }
 
-p {
-    font-family: "Gill Sans MT", serif;
-    font-size: 13px;
-    text-align: center;
+.logo {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
 }
+
 .buy-window {
     position: fixed;
     background-color: #fff;

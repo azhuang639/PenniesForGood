@@ -10,30 +10,17 @@
 </head>
 
 <body>
-<div class="header">
-    <h1>Header</h1>
-</div>
+    <img id = "buy_logo" class="logo" src="/assets/penny.png" alt="logo"/><br>
+    <p class = "title">PenniesForGood
 
-<img id = "buy_logo" src="/assets/penny.png"/>
+    </p><br><br>
+    <h2 class="spare">Spare Some Pennies?</h2>
+    <p class="description">We can round up your purchase to the nearest dollar and send it to a charity of your choice!</p>
 
-<div class="content">
-    <h1 class="title">hey</h1>
-    <!--<img src = "../assets/penny.png" alt="logo">-->
-    <h2 class="body1">Spare Some Pennies?</h2>
-    <h2 id="current_amount"></h2>
-    <h2 id="rounded_amount"></h2>
+    <h2 class="money" id="current_amount"></h2>
+    <h2 class="money" id="rounded_amount"></h2>
     <button class="button">Yes</button><br><br>
     <button class="button" id = "no_donate">No</button>
-</div>
-
-<!--
-<form>
-    Value: <input type="text" name="userInput", id="userInput", value="inputValue"><br>
-    <input type="button" value="Submit" id="submitButton">
-</form>
-
-<input type="button", id="get", value="Get saved input">
--->
 
 <script>
     document.getElementById("current_amount").innerHTML = "$2.75";
