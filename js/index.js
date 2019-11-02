@@ -45,7 +45,7 @@ function trackPurchase() {
     if (targetButton) {
         targetButton.addEventListener('click', (e) => {
             // If buy window has not already been shown and Pennies For Good is active
-            if (active && !document.getElementById('buy-checked')) {
+            if (active && !document.getElementById('buyChecked')) {
                 e.preventDefault();
                 insertWindow();
                 console.log("hi");
@@ -69,6 +69,8 @@ function insertWindow() {
             overlay.className = 'buy-overlay';
             overlay.id = 'buy-overlay';
             body.append(overlay);
+
+            startup(price_val);
         }).catch(err => {
         console.log('Error loading Buy window:' + err)
     });
