@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Pennies For Good",
+  "description": "Help Donate!",
+  "version": "1.00",
+  "icons": {
+    "128": "assets/logo.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [ "css/window.css" ],
+      "js": [ "js/index.js", "js/window.js" ],
+      "run_at": "document_end"
+    }
+
+  ],
+  "browser_action": {
+    "default_icon": "assets/logo.png",
+    "default_popup": "html/popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "html/window.html",
+    "assets/impulse.png"
+  ]
+}
