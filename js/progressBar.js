@@ -1,6 +1,6 @@
 //sum of amounts raised for each charity
-var char1sum = (3.89).toFixed(2);
-var char2sum = (4.19).toFixed(2);
+var char1sum = (4.89).toFixed(2);
+var char2sum = (1.19).toFixed(2);
 var char3sum = (0.80).toFixed(2);
 
 //goal for charities
