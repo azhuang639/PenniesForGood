@@ -14,8 +14,8 @@
     text-align: center;
     color: black;
     font-family: "Times New Roman", Times serif;
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 30px;
+    font-size: 30px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -39,8 +39,8 @@
 .logo {
     height: auto;
     width: auto;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .buy-window {
