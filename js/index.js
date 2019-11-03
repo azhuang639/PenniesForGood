@@ -9,8 +9,9 @@ var price_val;
 var counts = -1;
 var category; //1 or 2 ed,health,hung
 
+var targetButton;
+
 function trackPurchase() {
-    let targetButton;
     var price;
 
     const url = location.href;

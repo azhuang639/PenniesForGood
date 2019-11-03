@@ -165,6 +165,7 @@ function closeCharityWindow(){
     document.getElementById('charity-overlay').style.display = 'none';
     document.getElementById('buy-window').style.display = 'none';
     document.getElementById('buy-overlay').style.display = 'none';
+    targetButton.click();
 }
 function insertThankWindow(){
     closeCharityWindow();
