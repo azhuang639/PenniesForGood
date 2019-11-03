@@ -22,6 +22,9 @@ function insertCharityWindow() {
             overlay.id = 'charity-overlay';
             charityBody.append(overlay);
             console.log('wtf');
+
+            startupCharity();
+
         }).catch(err => {
         console.log('Error loading Charity window:' + err)
     });
