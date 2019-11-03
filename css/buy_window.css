@@ -11,9 +11,16 @@
     font-size: 30px
 }
 .description {
-    margin: auto;
     text-align: center;
-    font-size: 40px
+    color: black;
+    font-family: "Times New Roman", Times serif;
+    line-height: 40px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 80%;
 }
 .money {
     text-align: center;
