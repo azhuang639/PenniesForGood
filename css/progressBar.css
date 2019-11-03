@@ -5,18 +5,18 @@ h1{
 
 .meter1Percent{
     position: relative;
-    right: -40px;
+    right: -45px;
     top: 295px;
 }
 .meter2Percent{
     position: relative;
-    right: -150px;
-    top: 268px;
+    right: -151px;
+    top: 269px;
 }
 .meter3Percent{
     position: relative;
     right: -259px;
-    top: 242px;
+    top: 241px;
 }
 
 .meter1dollar{
@@ -39,14 +39,14 @@ h1{
 .hungerLabel{
     color: rgba(0, 29, 9, 0.98);
     position: relative;
-    right: -35px;
-    top: 355px;
+    right: -37px;
+    top: 356px;
 }
 .educationLabel{
     color: rgba(0, 29, 9, 0.98);
     position: relative;
-    right: -133px;
-    top: 302px;
+    right: -135px;
+    top: 303px;
 }
 .healthLabel{
     color: rgba(0, 29, 9, 0.98);
