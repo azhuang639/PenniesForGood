@@ -29,6 +29,10 @@ chrome.storage.local.get({active: true}, function(result) {
 
 document.addEventListener('DOMContentLoaded', function() {
     // careful with using += to modify innerHTML, it'll remove all event listeners i think
+    chrome.storage.sync.get('sessionDonation', function(data) {
+        var sessionDonation1 = document.getElementById('sessionDonation');
+        sessionDonation1.innerHTML = "$"+Number(data.sessionDonation).toFixed(2);
+    });
 
     var pauseLink = document.getElementById('pause');
     pauseLink.addEventListener('click', function() {
