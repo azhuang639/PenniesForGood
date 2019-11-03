@@ -64,6 +64,7 @@ function addMoney(){
 }
 
 function addSessionDonation() {
+    var val = donated;
     // fourth variable
     chrome.storage.sync.get('sessionDonation', function (data) {
         chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation))}, function() {

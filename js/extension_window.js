@@ -4,6 +4,12 @@ function initiate(){
 
 function clearStorage(){
     chrome.storage.sync.set({'education': 0}, function() {
+    })
+    chrome.storage.sync.set({'health': 0}, function() {
+    })
+    chrome.storage.sync.set({'hunger': 0}, function() {
+    })
+    chrome.storage.sync.set({'sessionDonation': 0}, function() {
         alert("success resetting money!");
     })
 }
