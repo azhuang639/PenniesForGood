@@ -9,35 +9,17 @@ function startupCharity(){
 }
 
 function addMoney(){
-    var submitLink = document.getElementById('firstButton');
-    submitLink.onclick = function () {
-        counts += 1;
-        var val = donated;
-        
-        if (counts > -2) {
-            chrome.storage.sync.get('myLine', function (data) {
-                chrome.storage.sync.set({'myLine': (Number(val) + Number(data.myLine))}, function() {
-                    alert("success adding money!");
-                    chrome.storage.sync.get('myLine', function (data) {
-                        alert("new total is: " + data.myLine);
-                    })
-                })
-            })
-        }
-        else {
-            chrome.storage.sync.set({'myLine': val }, function () {
-                alert("success!");
-                chrome.storage.sync.get('myLine', function (data) {
-                    alert("total is: " + data.myLine);
-                })
-            });
-        }
-
-        // check that the updated total is correct
-        //chrome.storage.sync.get('myLine', function (data) {
-        //    alert("new total is: " + data.myLine);
-        //})
-        
+    var submitOneLink = document.getElementById('firstButton');
+    submitOneLink.onclick = function () {
+        newTotal();
+    }
+    var submitTwoLink = document.getElementById('secondButton');
+    submitTwoLink.onclick = function () {
+        newTotal();
+    }
+    var submitThreeLink = document.getElementById('thirdButton');
+    submitThreeLink.onclick = function () {
+        newTotal();
     }
     /*
     document.getElementById('get').onclick = function () {
@@ -47,4 +29,28 @@ function addMoney(){
     }
     */
 
+}
+
+function newTotal(){
+    counts += 1;
+    var val = donated;
+
+    if (counts > -2) {
+        chrome.storage.sync.get('myLine', function (data) {
+            chrome.storage.sync.set({'myLine': (Number(val) + Number(data.myLine))}, function() {
+                alert("success adding money!");
+                chrome.storage.sync.get('myLine', function (data) {
+                    alert("new total is: " + parseFloat(data.myLine).toFixed(2));
+                })
+            })
+        })
+    }
+    else {
+        chrome.storage.sync.set({'myLine': val }, function () {
+            alert("success!");
+            chrome.storage.sync.get('myLine', function (data) {
+                alert("total is: " + parseFloat(data.myLine).toFixed(2));
+            })
+        });
+    }
 }
