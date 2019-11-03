@@ -2,11 +2,11 @@
     boz-sizing: border-box;
 }
 .title {
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     color: saddlebrown;
     font-family: "Bradley Hand ITC";
-    font-size: 30px
+    font-size: 20px
 }
 .logo {
     height: auto;
@@ -50,6 +50,10 @@
     width: 33vh;
     max-width: 300px;
     max-height: 300px;
+    /*height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;*/
     /*padding:1px;*/
     /*border:1px solid #021a40;*/
     /*border-radius: 50%;*/
@@ -63,7 +67,7 @@
     font-size: 16px;
 }
 .button1 .title {
-    font-family: "Gill Sans MT", sans-serif;
+    font-family: "Verdana", sans-serif;
     /*font-weight: bold;*/
     text-transform: uppercase;
     color: black;
@@ -107,8 +111,8 @@
 
 .pic {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-right: auto;
     margin-left: auto;
 }
