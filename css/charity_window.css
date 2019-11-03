@@ -46,8 +46,8 @@
 }
 
 .button1 figure img {
-    height: auto;
-    width: auto;
+    height: 30vw;
+    width: 33vh;
     max-width: 300px;
     max-height: 300px;
     /*padding:1px;*/
