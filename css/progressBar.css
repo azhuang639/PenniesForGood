@@ -3,6 +3,27 @@ h1{
     color: rgba(0, 29, 9, 0.98);
 }
 
+
+.hungerLabel{
+    color: rgba(0, 29, 9, 0.98);
+    position: fixed;
+    right: 1345px;
+    top: 510px;
+}
+.educationLabel{
+    color: rgba(0, 29, 9, 0.98);
+    position: fixed;
+    right: 1230px;
+    top: 510px;
+}
+.healthLabel{
+    color: rgba(0, 29, 9, 0.98);
+    position: fixed;
+    right: 1135px;
+    top: 510px;
+}
+
+
 .meter1 {
     height: 20px;  /* Can be anything */
     width: 300px;
@@ -35,7 +56,7 @@ h1{
     height: 20px;  /* Can be anything */
     width: 300px;
     position: fixed;
-    right: 1100px;
+    right: 1105px;
     top: 330px;
     background: #555;
     -moz-border-radius: 25px;
@@ -92,7 +113,6 @@ h1{
     background-color: #f1a165;
     background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
 }
-
 
 body {
     background-color: #bcf1cd;
