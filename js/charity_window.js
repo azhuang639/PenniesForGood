@@ -2,6 +2,7 @@
 // var category = 0; //0, 1, 2
 function startupCharity(){
     var charities;
+    console.log("category is " + category);
     if(category===0) charities=education;
     else if(category===1) charities=health;
     else charities=hunger;
