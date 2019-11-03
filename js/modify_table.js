@@ -24,7 +24,7 @@ function modify_table() {
 
         var btn = document.createElement("BUTTON");
         btn.setAttribute("id","clearSession");
-        var t = document.createTextNode("CLICK ME");
+        var t = document.createTextNode("Reset Session");
 
         btn.appendChild(t);
         //Appending to DOM

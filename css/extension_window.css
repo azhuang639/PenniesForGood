@@ -1,6 +1,10 @@
 body {
     width: 320px;
+<<<<<<< HEAD
     height: 490px;
+=======
+    height: 500px;
+>>>>>>> 6b2ddea3875834a54404e432f99f5c28e6b5e722
     background-color: rgba(246, 249, 244, 0.41);
 }
 
