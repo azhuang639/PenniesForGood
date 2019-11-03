@@ -5,7 +5,6 @@ chrome.storage.local.get({active: true}, function(result) {
 
 trackPurchase();
 var price_val;
-var product;
 
 function trackPurchase() {
     let targetButton;
@@ -31,10 +30,7 @@ function trackPurchase() {
                 console.log(price_val);
 
             }
-            var pro = document.getElementById("productTitle");
-            product = pro.innerHTML;
-            product = product.trim();
-            console.log(product);
+
         }
 
 

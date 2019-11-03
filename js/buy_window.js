@@ -1,9 +1,34 @@
 function startup(x){
     document.getElementById('buy_logo').src = chrome.extension.getURL('assets/penny.png');
-    document.getElementById("no_donate").addEventListener('click', closeWindow);
+    document.getElementById("no_donate").addEventListener('click', closeBuyWindow);
+    document.getElementById("yes_donate").addEventListener('click', insertCharityWindow);
+
 }
 
-function closeWindow(){
+function insertCharityWindow() {
+    closeBuyWindow();
+    console.log('HEPL');
+    fetch(chrome.extension.getURL('html/charity_window.html'))
+        .then(response => response.text())
+        .then(data => {
+            const charityBody = document.getElementsByTagName('body')[0];
+            const charityWindow = document.createElement('div');
+            charityWindow.className = 'charity-window';
+            charityWindow.id = 'charity-window';
+            charityWindow.innerHTML = data;
+            charityBody.append(charityWindow);
+
+            const overlay = document.createElement('div');
+            overlay.className = 'charity-overlay';
+            overlay.id = 'charity-overlay';
+            charityBody.append(overlay);
+            console.log('wtf');
+        }).catch(err => {
+        console.log('Error loading Charity window:' + err)
+    });
+}
+
+function closeBuyWindow(){
     document.getElementById('buy-window').style.display = 'none';
     document.getElementById('buy-overlay').style.display = 'none';
 
