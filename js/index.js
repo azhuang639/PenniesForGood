@@ -18,15 +18,15 @@ function trackPurchase() {
         return;
     }
 
-    if (url.includes('amazon.com') && !url.includes('amazon.com/gp')) {
+    if (url.includes('amazon.com') && !url.includes('buy')) {
         targetCategories = document.title.split(":");
         targetCategory = targetCategories[targetCategories.length-1];
         console.log(targetCategory);
-        if (targetCategory == " Books")
+        if (targetCategory === " Office Products")
             category = 0;
         else if (targetCategory == " Health & Personal Care" || targetCategory == " Health & Household")
             category = 1;
-        else if (targetCategory == " Prime Pantry")
+        else if (targetCategory === " Grocery & Gourmet Food")
             category = 2;
 
         targetButton = document.getElementById('add-to-cart-button');
