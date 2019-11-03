@@ -1,65 +1,94 @@
+.title{
+    position: relative;
+    right: -500px;
+    font-size: 30px;
+    letter-spacing: 6px;
+
+}
+
+.goal{
+    position: relative;
+    right: -350px;
+    top:100px;
+    font-size: 16px;
+}
+
+
 .meter1Percent{
     position: relative;
-    right: -45px;
-    top: 295px;
+    right: -500px;
+    top: 375px;
+    font-weight: bold;
+
 }
 .meter2Percent{
     position: relative;
-    right: -151px;
-    top: 269px;
+    right: -651px;
+    top: 349px;
+    font-weight: bold;
 }
 .meter3Percent{
     position: relative;
-    right: -259px;
-    top: 241px;
+    right: -809px;
+    top: 321px;
+    font-weight: bold;
 }
 
 .meter1dollar{
     position: relative;
-    right: -40px;
-    top: -164px;
+    right: -485px;
+    top: -204px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .meter2dollar{
     position: relative;
-    right: -150px;
-    top: -190px;
+    right: -645px;
+    top: -235px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .meter3dollar{
     position: relative;
-    right: -260px;
-    top: -217px;
+    right: -800px;
+    top: -267px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
 .hungerLabel{
     color: rgba(8, 63, 15, 0.98);
     position: relative;
-    right: -37px;
+    right: -472px;
     font-weight: bold;
-    top: 356px;
+    font-size: 17px;
+    top: 458px;
 }
 .educationLabel{
     color: rgba(126, 109, 65, 0.98);
     position: relative;
-    right: -135px;
+    right: -615px;
     font-weight: bold;
-    top: 303px;
+    font-size: 17px;
+    top: 383px;
 }
 .healthLabel{
     color: rgba(30, 45, 108, 0.98);
     position: relative;
-    right: -253px;
+    right: -790px;
     font-weight: bold;
-    top: 330px;
+    font-size: 17px;
+    top: 420px;
 }
 
 
 .meter1 {
-    height: 20px;  /* Can be anything */
-    width: 300px;
+    height: 30px;  /* Can be anything */
+    width: 400px;
     position: relative;
-    right: 100px;
-    top: -80px;
+    right: -300px;
+    top: -85px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -83,11 +112,11 @@
 
 
 .meter2 {
-    height: 20px;  /* Can be anything */
-    width: 300px;
+    height: 30px;  /* Can be anything */
+    width: 400px;
     position: relative;
-    left: 5px;
-    top: -120px;
+    right: -455px;
+    top: -135px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -112,11 +141,11 @@
 
 
 .meter3 {
-    height: 20px;  /* Can be anything */
-    width: 300px;
+    height: 30px;  /* Can be anything */
+    width: 400px;
     position: relative;
-    left: 113px;
-    top: -160px;
+    right: -613px;
+    top: -185px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
