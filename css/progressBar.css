@@ -19,6 +19,23 @@ h1{
     top: 530px;
 }
 
+.meter1dollar{
+    position: fixed;
+    right: 1355px;
+    top: 145px;
+}
+.meter2dollar{
+    position: fixed;
+    right: 1250px;
+    top: 145px;
+}
+.meter3dollar{
+    position: fixed;
+    right: 1145px;
+    top: 145px;
+}
+
+
 .hungerLabel{
     color: rgba(0, 29, 9, 0.98);
     position: fixed;
@@ -130,7 +147,7 @@ h1{
 }
 
 body {
-    background-color: #bcf1cd;
+    background-color: rgba(249, 246, 246, 0.86);
 }
 
 
