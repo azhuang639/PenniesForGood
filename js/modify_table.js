@@ -2,7 +2,7 @@ function modify_table() {
     if (document.title.indexOf("Place Your Order - Amazon.com Checkout") !== -1) {
 
         chrome.storage.sync.get('sessionDonation', function(data) {
-            var current_don = data.sessionDonation.toFixed(2);
+            var current_don = data.sessionDonation;
             var table = document.getElementById("subtotals-marketplace-table");
             let newRow = table.insertRow(table.rows.length - 2);
             let newCell = newRow.insertCell(0);

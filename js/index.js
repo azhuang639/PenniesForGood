@@ -26,6 +26,8 @@ function trackPurchase() {
             category = 0;
         else if (targetCategory === " Health & Household")
             category = 1;
+        else if (targetCategory === " Health & Personal Care")
+            category = 1;
         else if (targetCategory === " Grocery & Gourmet Food")
             category = 2;
 
