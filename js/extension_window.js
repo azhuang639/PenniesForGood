@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("health " + data.health);
         char3 = parseFloat(data.health).toFixed(2);
         console.log("char3 is " + char3);
-        totalDon = Number(char3) + Number(totalDon);
+        totalDon = (Number(char3) + Number(totalDon)).toFixed(2);
         console.log("totalDon is " + totalDon);
         console.log("final totalDon is "+totalDon);
         document.getElementById("total").innerHTML = "$" + totalDon + "";

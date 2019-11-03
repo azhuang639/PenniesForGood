@@ -2,6 +2,7 @@
 // var category = 0; //0, 1, 2
 function startupCharity(){
     var charities;
+    console.log("category is " + category);
     if(category===0) charities=education;
     else if(category===1) charities=health;
     else charities=hunger;
@@ -79,9 +80,9 @@ function addSessionDonation() {
     // fourth variable
     chrome.storage.sync.get('sessionDonation', function (data) {
         chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation)).toFixed(2)}, function() {
-            alert("success adding money!");
+            /*alert("success adding money!");*/
             chrome.storage.sync.get('sessionDonation', function (data) {
-                alert("new total is: " + parseFloat(data.sessionDonation).toFixed(2));
+                /*alert("new total is: " + parseFloat(data.sessionDonation).toFixed(2));*/
             })
         })
     })
@@ -94,18 +95,18 @@ function newTotal(){
     if (counts > -2) {
         chrome.storage.sync.get('education', function (data) {
             chrome.storage.sync.set({'education': (Number(val) + Number(data.education)).toFixed(2)}, function() {
-                alert("success adding money!");
+                /*alert("success adding money!");*/
                 chrome.storage.sync.get('education', function (data) {
-                    alert("new total is: " + parseFloat(data.education).toFixed(2));
+                    /*alert("new total is: " + parseFloat(data.education).toFixed(2));*/
                 })
             })
         })
     }
     else {
         chrome.storage.sync.set({'education': val }, function () {
-            alert("success!");
+            /*alert("success!");*/
             chrome.storage.sync.get('education', function (data) {
-                alert("total is: " + parseFloat(data.education).toFixed(2));
+                /*alert("total is: " + parseFloat(data.education).toFixed(2));*/
             })
         });
     }
@@ -118,18 +119,18 @@ function newTotal2(){
     if (counts > -2) {
         chrome.storage.sync.get('health', function (data) {
             chrome.storage.sync.set({'health': (Number(val) + Number(data.health)).toFixed(2)}, function() {
-                alert("success adding money!");
+                /*alert("success adding money!");*/
                 chrome.storage.sync.get('health', function (data) {
-                    alert("new total is: " + parseFloat(data.health).toFixed(2));
+                    /*alert("new total is: " + parseFloat(data.health).toFixed(2));*/
                 })
             })
         })
     }
     else {
         chrome.storage.sync.set({'health': val }, function () {
-            alert("success!");
+            /*alert("success!");*/
             chrome.storage.sync.get('health', function (data) {
-                alert("total is: " + parseFloat(data.health).toFixed(2));
+                /*alert("total is: " + parseFloat(data.health).toFixed(2));*/
             })
         });
     }
@@ -142,18 +143,18 @@ function newTotal3(){
     if (counts > -2) {
         chrome.storage.sync.get('hunger', function (data) {
             chrome.storage.sync.set({'hunger': (Number(val) + Number(data.hunger)).toFixed(2)}, function() {
-                alert("success adding money!");
+                /*alert("success adding money!");*/
                 chrome.storage.sync.get('hunger', function (data) {
-                    alert("new total is: " + parseFloat(data.hunger).toFixed(2));
+                    /*alert("new total is: " + parseFloat(data.hunger).toFixed(2));*/
                 })
             })
         })
     }
     else {
         chrome.storage.sync.set({'hunger': val }, function () {
-            alert("success!");
+            /*alert("success!");*/
             chrome.storage.sync.get('hunger', function (data) {
-                alert("total is: " + parseFloat(data.hunger).toFixed(2));
+                /*alert("total is: " + parseFloat(data.hunger).toFixed(2));*/
             })
         });
     }
