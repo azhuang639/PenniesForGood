@@ -11,7 +11,7 @@
     {
       "matches": ["<all_urls>"],
       "css": [ "css/buy_window.css", "css/charity_window.css" ],
-      "js": [ "js/index.js", "js/buy_window.js", "js/charity_window.js" ],
+      "js": [ "js/index.js", "js/buy_window.js", "js/charity_window.js", "js/modify_table.js" ],
       "run_at": "document_end"
     }
 
