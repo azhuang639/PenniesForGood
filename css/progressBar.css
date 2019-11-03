@@ -4,28 +4,9 @@ h1{
 }
 
 .meter1Percent{
-<<<<<<< HEAD
     position: relative;
     right: -40px;
     top: 315px;
-=======
-<<<<<<< HEAD
-    position: absolute;
-    right: 187vh;
-    top: 530px;
-}
-.meter2Percent{
-    position: absolute;
-    right: 177vh;
-    top: 530px;
-}
-.meter3Percent{
-=======
->>>>>>> c9ad03d6f69c93faa43463b9c2dd05e296af0cba
-    position: fixed;
-    right: 1355px;
-    top: 530px;
->>>>>>> f8895725dbb39de37c5e0e89d6a758a8de97326a
 }
 .meter2Percent{
     position: relative;
@@ -39,28 +20,10 @@ h1{
 }
 
 .meter1dollar{
-<<<<<<< HEAD
     position: relative;
     right: -40px;
     top: -180px;
-=======
-<<<<<<< HEAD
-    position: absolute;
-    right: 187vh;
-    top: 145px;
-}
-.meter2dollar{
-    position: absolute;
-    right: 177vh;
-    top: 145px;
-}
-.meter3dollar{
-=======
->>>>>>> c9ad03d6f69c93faa43463b9c2dd05e296af0cba
-    position: fixed;
-    right: 1355px;
-    top: 145px;
->>>>>>> f8895725dbb39de37c5e0e89d6a758a8de97326a
+
 }
 .meter2dollar{
     position: relative;
