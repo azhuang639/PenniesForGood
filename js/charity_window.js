@@ -1,10 +1,58 @@
 //var counts = -1;
-
+var charities = [
+    {
+        name: 'UNICEF',
+        description: 'UNICEF works in over 190 countries and territories to save children’s lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence. And we never give up.',
+        category: 'education',
+        url: 'https://www.icpcn.org/wp-content/uploads/2013/08/Unicef-Logo.png'
+    },
+    {
+        name: 'ProLiteracy',
+        description: 'ProLiteracy, the largest adult literacy and basic education membership organization in the nation, believes that a safer, stronger, and more sustainable society starts with an educated adult population. For more than 60 years, ProLiteracy has been working across the globe to change lives and communities through the power of literacy.',
+        category: 'education',
+        url: 'https://cdn1.imggmi.com/uploads/2019/11/3/31cdb5d508f07e3766c8c95d9caab657-full.png'
+    },
+    {
+        name: 'Room to Read',
+        description: 'Room to Read seeks to transform the lives of millions of children in low-income communities by focusing on literacy and gender equality in education.',
+        category: 'education',
+        url: 'https://cdn1.imggmi.com/uploads/2019/11/3/6bb6e84d6e3aec39476cca6d35044eca-full.png',
+    }
+]
 function startupCharity(){
     document.getElementById('charity_logo').src = chrome.extension.getURL('assets/penny.png');
+    // var obj = JSON.parse("{ 'name':'John', 'age':30, 'city':'New York}');
     var hover1 = document.getElementById('hover1');
     var hover2 = document.getElementById('hover2');
     var hover3 = document.getElementById('hover3');
+
+    var arr = Array.from(Array(charities.length), (d, i) => i);
+    // console.log(arr);
+
+    var ind = Math.floor((Math.random() * arr.length));
+    // console.log("a" + arr[ind]);
+    var logo1 = document.getElementById("logo1");
+    logo1.src = charities[arr[ind]].url;
+    // console.log(charities[arr[ind]].url);
+    hover1.innerHTML = charities[arr[ind]].description;
+    arr.splice(ind,1);
+
+    ind = Math.floor((Math.random() * arr.length));
+    // console.log("a" + arr[ind]);
+    var logo2 = document.getElementById("logo2");
+    logo2.src = charities[arr[ind]].url;
+    hover2.innerHTML = charities[arr[ind]].description;
+    // console.log(charities[arr[ind]].url);
+    arr.splice(ind,1);
+
+    ind = Math.floor((Math.random() * arr.length));
+    // console.log("a" + arr[ind]);
+    var logo3 = document.getElementById("logo3");
+    logo3.src = charities[arr[ind]].url;
+    hover3.innerHTML = charities[arr[ind]].description;
+    // console.log(charities[arr[ind]].url);
+
+    // console.log();
 
     addMoney();
 }
