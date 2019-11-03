@@ -16,7 +16,7 @@ function trackPurchase() {
         return;
     }
 
-    if (url.includes('amazon.com')) {
+    if (url.includes('amazon.com') && !url.includes('amazon.com/gp')) {
         targetButton = document.getElementById('add-to-cart-button');
 
         if (targetButton){
