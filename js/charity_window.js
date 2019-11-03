@@ -60,6 +60,11 @@ function startupCharity(){
     document.getElementById("firstButton").addEventListener('click', closeCharityWindow);
     document.getElementById("secondButton").addEventListener('click', closeCharityWindow);
     document.getElementById("thirdButton").addEventListener('click', closeCharityWindow);
+    window.addEventListener('click', function(e){
+        if (!document.getElementById('charity-window').contains(e.target)){
+            closeCharityWindow();
+        }
+    })
     addMoney();
 }
 
