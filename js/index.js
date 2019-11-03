@@ -1,3 +1,4 @@
+//hi raymond
 let active;
 chrome.storage.local.get({active: true}, function(result) {
     active = result.active;
