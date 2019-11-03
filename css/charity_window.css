@@ -14,7 +14,7 @@
     max-width: 150px;
     max-height: 150px;
 }
-.button {
+.button1 {
     background: #fff;
     border-radius: 6px;
     display: inline-block;
@@ -24,11 +24,11 @@
     text-decoration: none;
 }
 
-.button figure {
+.button1 figure {
     margin: 0 0 15px;
 }
 
-.button figure img {
+.button1 figure img {
     height: auto;
     width: auto;
     max-width: 300px;
@@ -38,14 +38,14 @@
     /*border-radius: 50%;*/
 }
 
-.button .text {
+.button1 .text {
     font-weight: bold;
     text-transform: uppercase;
     color: #1d368a;
     margin: 0 0 15px;
     font-size: 16px;
 }
-.button .title {
+.button1 .title {
     font-weight: bold;
     text-transform: uppercase;
     color: #1d368a;
