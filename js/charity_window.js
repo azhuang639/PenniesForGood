@@ -5,6 +5,7 @@ function startupCharity(){
     var hover1 = document.getElementById('hover1');
     var hover2 = document.getElementById('hover2');
     var hover3 = document.getElementById('hover3');
+
     addMoney();
 }
 

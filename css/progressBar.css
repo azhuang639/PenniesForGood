@@ -37,21 +37,24 @@ h1{
 
 
 .hungerLabel{
-    color: rgba(0, 29, 9, 0.98);
+    color: rgba(8, 63, 15, 0.98);
     position: relative;
     right: -37px;
+    font-weight: bold;
     top: 356px;
 }
 .educationLabel{
-    color: rgba(0, 29, 9, 0.98);
+    color: rgba(126, 109, 65, 0.98);
     position: relative;
     right: -135px;
+    font-weight: bold;
     top: 303px;
 }
 .healthLabel{
-    color: rgba(0, 29, 9, 0.98);
+    color: rgba(30, 45, 108, 0.98);
     position: relative;
     right: -253px;
+    font-weight: bold;
     top: 330px;
 }
 
@@ -103,8 +106,8 @@ h1{
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
-    background-color: #228019;
-    background-image: linear-gradient(to bottom, #adf127, #1af367);
+    background-color: #c2ca26;
+    background-image: linear-gradient(to bottom, #ebf16a, #e5cc6b);
     box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
@@ -132,8 +135,8 @@ h1{
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
-    background-color: #228019;
-    background-image: linear-gradient(to bottom, #adf127, #1af367);
+    background-color: #6d75bc;
+    background-image: linear-gradient(to bottom, #6dbef1, #4b87f9);
     box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
