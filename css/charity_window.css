@@ -25,6 +25,12 @@
     display: inline-block;
 }
 
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
 .button1 {
     background: #fff;
     border-radius: 6px;
@@ -64,7 +70,12 @@
     font-size: 20px;
     text-align: center;
 }
-
+.button1:hover {background-color: #3e8e41}
+.button1:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 .charity-window {
     position: fixed;
