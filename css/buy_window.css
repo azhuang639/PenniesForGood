@@ -14,8 +14,8 @@
     text-align: center;
     color: black;
     font-family: "Times New Roman", Times serif;
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 30px;
+    font-size: 30px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +27,7 @@
 }
 .button {
     border: none;
-    background-color: lightgreen;
+    background-color: #9CEBF2;
     color: black;
     padding: 15px 32px;
     text-align: center;
@@ -39,8 +39,8 @@
 .logo {
     height: auto;
     width: auto;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .buy-window {
@@ -67,4 +67,10 @@
     background-color: #555;
     opacity: 0.8;
     z-index: 100000;
+}
+
+.moneymoneymoney {
+    text-align: center;
+    color: black;
+    font-size: 45px
 }

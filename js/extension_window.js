@@ -1,3 +1,11 @@
+function initiate(){
+    document.getElementById("learn_more").addEventListener('click', insertProgressBar);
+}
+
+function insertProgressBar() {
+}
+
+
 let active;
 chrome.storage.local.get({active: true}, function(result) {
     active = result.active;

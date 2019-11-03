@@ -3,6 +3,21 @@ h1{
     color: rgba(0, 29, 9, 0.98);
 }
 
+.meter1Percent{
+    position: fixed;
+    right: 1355px;
+    top: 530px;
+}
+.meter2Percent{
+    position: fixed;
+    right: 1250px;
+    top: 530px;
+}
+.meter3Percent{
+    position: fixed;
+    right: 1140px;
+    top: 530px;
+}
 
 .hungerLabel{
     color: rgba(0, 29, 9, 0.98);

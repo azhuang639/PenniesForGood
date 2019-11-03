@@ -1,8 +1,10 @@
+var donated = parseFloat(Math.ceil(price_val)) - price_val;
+
 function startup(x){
     document.getElementById('buy_logo').src = chrome.extension.getURL('assets/penny.png');
     document.getElementById("no_donate").addEventListener('click', closeBuyWindow);
     document.getElementById("yes_donate").addEventListener('click', insertCharityWindow);
-
+    document.getElementById("helpmepls").innerHTML = "$" + price_val + "-->" + Math.ceil(price_val) + ".00";
 }
 
 function insertCharityWindow() {
