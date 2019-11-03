@@ -7,6 +7,11 @@ function startup(x){
     document.getElementById("yes_donate").addEventListener('click', insertCharityWindow);
     document.getElementById("helpmepls").innerHTML = "$" + price_val;
     document.getElementById("helpmeplstoo").innerHTML = "$" + Math.ceil(price_val) + ".00";
+    window.addEventListener('click', function(e){
+        if (!document.getElementById('buy-window').contains(e.target)){
+            closeBuyWindow();
+        }
+    })
 }
 
 function insertCharityWindow() {

@@ -1,7 +1,7 @@
 * {
     boz-sizing: border-box;
 }
-.title {
+.titleCharity {
     margin-top: 10px;
     text-align: center;
     color: saddlebrown;
@@ -75,7 +75,7 @@
     height: 33vh;
 }
 #logo-holder .text {transition: opacity 0.3s ease-in-out;}
-#logo-holder .text {position:absolute; top:0; opacity:0;}
+#logo-holder .text {position:absolute; top:2vh; right:0.7vh; opacity:0; padding-left: 2vh; padding-right:1.5vh;}
 #logo-holder .test_button {
     background: #fff;
     border-radius: 6px;
@@ -115,7 +115,7 @@
     height: 33vh;
 }
 #logo-holder1 .text {transition: opacity 0.3s ease-in-out;}
-#logo-holder1 .text {position:absolute; top:0; opacity:0;}
+#logo-holder1 .text {position:absolute; top:2vh; right:0.7vh; opacity:0; padding-left: 2vh; padding-right:1.5vh;}
 #logo-holder1 .test_button {
     background: #fff;
     border-radius: 6px;
@@ -149,7 +149,7 @@
     height: 33vh;
 }
 #logo-holder2 .text {transition: opacity 0.3s ease-in-out;}
-#logo-holder2 .text {position:absolute; top:0; opacity:0;}
+#logo-holder2 .text {position:absolute; top:2vh; right:0.7vh; opacity:0; padding-left: 2vh; padding-right:1.5vh;}
 #logo-holder2 .test_button {
     background: #fff;
     border-radius: 6px;

@@ -2,6 +2,12 @@ function initiate(){
     document.getElementById("learn_more").addEventListener('click', insertProgressBar);
 }
 
+function clearStorage(){
+    chrome.storage.sync.set({'myLine': 0}, function() {
+        alert("success resetting money!");
+    })
+}
+
 function insertProgressBar() {
 }
 
@@ -24,9 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("hi");
     });
 
-    var learnLink = document.getElementById('learn_more')
+    var learnLink = document.getElementById('learn_more');
     learnLink.addEventListener('click', function(){
         newPopup('../html/progessBar.html');
+    });
+
+    var clearLink = document.getElementById('clearStorage');
+    clearLink.addEventListener('click', function() {
+        clearStorage();
     });
 });
 
