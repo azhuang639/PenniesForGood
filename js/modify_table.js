@@ -15,6 +15,12 @@ function modify_table() {
         let newTotal = Number(total.substring(total.indexOf("$") + 1)) + Number(donated);
         console.log(newTotal);
         table.rows[table.rows.length - 1].cells[1].innerHTML = "$" + newTotal;
+
+        var btn = document.createElement("BUTTON")
+        var t = document.createTextNode("CLICK ME");
+        btn.appendChild(t);
+        //Appending to DOM
+        document.body.appendChild(btn);
     }
 }
 
