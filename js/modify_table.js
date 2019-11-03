@@ -1,8 +1,8 @@
 function modify_table() {
     if (document.title.indexOf("Place Your Order - Amazon.com Checkout") !== -1) {
 
-        chrome.storage.sync.get('myLine', function(data) {
-            var current_don = data.myLine.toFixed(2);
+        chrome.storage.sync.get('sessionDonation', function(data) {
+            var current_don = data.sessionDonation.toFixed(2);
             var table = document.getElementById("subtotals-marketplace-table");
             let newRow = table.insertRow(table.rows.length - 2);
             let newCell = newRow.insertCell(0);
@@ -22,11 +22,19 @@ function modify_table() {
             table.rows[table.rows.length - 1].cells[1].innerHTML = "$" + newTotal.toFixed(2);
         });
 
-        var btn = document.createElement("BUTTON")
+        var btn = document.createElement("BUTTON");
+        btn.setAttribute("id","clearSession");
         var t = document.createTextNode("CLICK ME");
+
         btn.appendChild(t);
         //Appending to DOM
         document.body.appendChild(btn);
+        var clearSession = document.getElementById('clearSession');
+        clearSession.addEventListener('click', function() {
+            chrome.storage.sync.set({'sessionDonation': 0}, function() {
+                alert("success resetting session!");
+            })
+        });
     }
 }
 

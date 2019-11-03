@@ -1,6 +1,11 @@
 //var counts = -1;
+var category = 0; //0, 1, 2
 function startupCharity(){
-    var charities = hunger;
+    var charities;
+    if(category===0) charities=education;
+    else if(category===1) charities=health;
+    else charities=hunger;
+
     document.getElementById('charity_logo').src = chrome.extension.getURL('assets/penny.png');
     var hover1 = document.getElementById('hover1');
     var hover2 = document.getElementById('hover2');
@@ -48,17 +53,23 @@ function startupCharity(){
 function addMoney(){
     var submitOneLink = document.getElementById('firstButton');
     submitOneLink.onclick = function () {
-        newTotal();
+        if(category===0) newTotal();
+        else if(category===1) newTotal2();
+        else newTotal3();
         addSessionDonation();
     }
     var submitTwoLink = document.getElementById('secondButton');
     submitTwoLink.onclick = function () {
-        newTotal2();
+        if(category===0) newTotal();
+        else if(category===1) newTotal2();
+        else newTotal3();
         addSessionDonation();
     }
     var submitThreeLink = document.getElementById('thirdButton');
     submitThreeLink.onclick = function () {
-        newTotal3();
+        if(category===0) newTotal();
+        else if(category===1) newTotal2();
+        else newTotal3();
         addSessionDonation();
     }    
 }

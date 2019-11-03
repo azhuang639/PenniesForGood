@@ -29,9 +29,7 @@ function trackPurchase() {
                 let length = price_val.length;
                 price_val = price_val.substring(1,length);
                 console.log(price_val);
-
             }
-
         }
 
 
