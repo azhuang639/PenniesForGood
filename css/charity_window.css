@@ -46,10 +46,14 @@
 }
 
 .button1 figure img {
-    height: auto;
+    height: 30vw;
+    width: 33vh;
+    max-width: 300px;
+    max-height: 300px;
+    /*height: auto;
     width: auto;
     max-width: 150px;
-    max-height: 150px;
+    max-height: 150px;*/
     /*padding:1px;*/
     /*border:1px solid #021a40;*/
     /*border-radius: 50%;*/
