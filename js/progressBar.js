@@ -5,7 +5,7 @@ var char2sum = (1.19).toFixed(2);
 var char3sum = (3.80).toFixed(2);
 
 //goal for charities
-var goal = 60.00;
+var goal = 6.00;
 
 //percent of goal raised
 var percentChar1 = ((char1sum/goal)*100).toFixed(0);
