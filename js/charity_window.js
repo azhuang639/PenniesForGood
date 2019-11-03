@@ -1,4 +1,4 @@
-var counts = -1;
+//var counts = -1;
 
 function startupCharity(){
     document.getElementById('charity_logo').src = chrome.extension.getURL('assets/penny.png');
@@ -9,9 +9,9 @@ function addMoney(){
     var submitLink = document.getElementById('firstButton');
     submitLink.onclick = function () {
         counts += 1;
-        var val = 23 // RANDOM NUMBER
+        var val = donated
         
-        if (counts > 0) {
+        if (counts > -2) {
             chrome.storage.sync.get('myLine', function (data) {
                 chrome.storage.sync.set({'myLine': (Number(val) + Number(data.myLine))}, function() {
                     alert("success adding money!");
@@ -25,7 +25,7 @@ function addMoney(){
             chrome.storage.sync.set({'myLine': val }, function () {
                 alert("success!");
                 chrome.storage.sync.get('myLine', function (data) {
-                    alert("new total is: " + data.myLine);
+                    alert("total is: " + data.myLine);
                 })
             });
         }

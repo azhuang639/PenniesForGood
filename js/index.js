@@ -5,6 +5,7 @@ chrome.storage.local.get({active: true}, function(result) {
 
 trackPurchase();
 var price_val;
+var counts = -1;
 
 function trackPurchase() {
     let targetButton;
