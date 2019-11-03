@@ -10,8 +10,8 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": [ "css/buy_window.css", "css/charity_window.css" ],
-      "js": [ "js/index.js", "js/buy_window.js", "js/charity_window.js", "js/modify_table.js" ],
+      "css": [ "css/buy_window.css", "css/charity_window.css", "css/thank_window.css" ],
+      "js": [ "js/index.js", "js/buy_window.js", "js/charity_window.js", "js/modify_table.js", "js/thank_window.js" ],
       "run_at": "document_end"
     }
 
@@ -29,6 +29,7 @@
     "html/buy_window.html",
     "html/charity_window.html",
     "html/progressBar.html",
+    "html/thank_window.html",
     "assets/penny.png",
     "charities.json",
     "assets/arrow_sign.png"

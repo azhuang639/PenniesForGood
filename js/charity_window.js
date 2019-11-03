@@ -34,9 +34,9 @@ function startupCharity(){
 
     // console.log();
 
-    document.getElementById("firstButton").addEventListener('click', closeCharityWindow);
-    document.getElementById("secondButton").addEventListener('click', closeCharityWindow);
-    document.getElementById("thirdButton").addEventListener('click', closeCharityWindow);
+    document.getElementById("firstButton").addEventListener('click', insertThankWindow);
+    document.getElementById("secondButton").addEventListener('click', insertThankWindow);
+    document.getElementById("thirdButton").addEventListener('click', insertThankWindow);
     window.addEventListener('click', function(e){
         if (!document.getElementById('charity-window').contains(e.target)){
             closeCharityWindow();
@@ -96,6 +96,31 @@ function closeCharityWindow(){
     document.getElementById('charity-overlay').style.display = 'none';
     document.getElementById('buy-window').style.display = 'none';
     document.getElementById('buy-overlay').style.display = 'none';
+}
+function insertThankWindow(){
+    closeCharityWindow();
+    fetch(chrome.extension.getURL('html/thank_window.html'))
+        .then(response => response.text())
+        .then(data => {
+            const thankBody = document.getElementsByTagName('body')[0];
+            const thankWindow = document.createElement('div');
+            thankWindow.className = 'thank-window';
+            thankWindow.id = 'thank-window';
+            thankWindow.innerHTML = data;
+            thankBody.append(thankWindow);
+
+            const overlay = document.createElement('div');
+            overlay.className = 'thank-overlay';
+            overlay.id = 'thank-overlay';
+            thankBody.append(overlay);
+            console.log('wtf');
+
+            startupThank();
+
+        }).catch(err => {
+        console.log('Error loading Thank window:' + err)
+    });
+
 }
 
 const education = [
