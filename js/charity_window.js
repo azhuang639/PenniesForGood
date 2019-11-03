@@ -5,6 +5,7 @@ function startupCharity(){
     var hover1 = document.getElementById('hover1');
     var hover2 = document.getElementById('hover2');
     var hover3 = document.getElementById('hover3');
+
     addMoney();
 }
 
@@ -16,7 +17,7 @@ function addMoney(){
         
         if (counts > -2) {
             chrome.storage.sync.get('myLine', function (data) {
-                chrome.storage.sync.set({'myLine': (Number(val) + Number(data.myLine))}, function() {
+                chrome.storage.sync.set({'myLine': Number(Math.round(Number(val) + Number(data.myLine)+'e2')+'e-2')}, function() {
                     alert("success adding money!");
                     chrome.storage.sync.get('myLine', function (data) {
                         alert("new total is: " + data.myLine);
