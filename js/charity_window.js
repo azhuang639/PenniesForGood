@@ -52,16 +52,16 @@ function addMoney(){
     }
     var submitTwoLink = document.getElementById('secondButton');
     submitTwoLink.onclick = function () {
-        newTotal();
+        newTotal2();
     }
     var submitThreeLink = document.getElementById('thirdButton');
     submitThreeLink.onclick = function () {
-        newTotal();
+        newTotal3();
     }
     /*
     document.getElementById('get').onclick = function () {
-        chrome.storage.sync.get('myLine', function (data) {
-            alert(data.myLine);
+        chrome.storage.sync.get('education', function (data) {
+            alert(data.education);
         })
     }
     */
@@ -73,24 +73,73 @@ function newTotal(){
     var val = donated;
 
     if (counts > -2) {
-        chrome.storage.sync.get('myLine', function (data) {
-            chrome.storage.sync.set({'myLine': (Number(val) + Number(data.myLine))}, function() {
+        chrome.storage.sync.get('education', function (data) {
+            chrome.storage.sync.set({'education': (Number(val) + Number(data.education))}, function() {
                 alert("success adding money!");
-                chrome.storage.sync.get('myLine', function (data) {
-                    alert("new total is: " + parseFloat(data.myLine).toFixed(2));
+                chrome.storage.sync.get('education', function (data) {
+                    alert("new total is: " + parseFloat(data.education).toFixed(2));
                 })
             })
         })
     }
     else {
-        chrome.storage.sync.set({'myLine': val }, function () {
+        chrome.storage.sync.set({'education': val }, function () {
             alert("success!");
-            chrome.storage.sync.get('myLine', function (data) {
-                alert("total is: " + parseFloat(data.myLine).toFixed(2));
+            chrome.storage.sync.get('education', function (data) {
+                alert("total is: " + parseFloat(data.education).toFixed(2));
             })
         });
     }
 }
+
+function newTotal2(){
+    counts += 1;
+    var val = donated;
+
+    if (counts > -2) {
+        chrome.storage.sync.get('health', function (data) {
+            chrome.storage.sync.set({'health': (Number(val) + Number(data.health))}, function() {
+                alert("success adding money!");
+                chrome.storage.sync.get('health', function (data) {
+                    alert("new total is: " + parseFloat(data.health).toFixed(2));
+                })
+            })
+        })
+    }
+    else {
+        chrome.storage.sync.set({'health': val }, function () {
+            alert("success!");
+            chrome.storage.sync.get('health', function (data) {
+                alert("total is: " + parseFloat(data.health).toFixed(2));
+            })
+        });
+    }
+}
+
+function newTotal3(){
+    counts += 1;
+    var val = donated;
+
+    if (counts > -2) {
+        chrome.storage.sync.get('hunger', function (data) {
+            chrome.storage.sync.set({'hunger': (Number(val) + Number(data.hunger))}, function() {
+                alert("success adding money!");
+                chrome.storage.sync.get('hunger', function (data) {
+                    alert("new total is: " + parseFloat(data.hunger).toFixed(2));
+                })
+            })
+        })
+    }
+    else {
+        chrome.storage.sync.set({'hunger': val }, function () {
+            alert("success!");
+            chrome.storage.sync.get('hunger', function (data) {
+                alert("total is: " + parseFloat(data.hunger).toFixed(2));
+            })
+        });
+    }
+}
+
 function closeCharityWindow(){
     document.getElementById('charity-window').style.display = 'none';
     document.getElementById('charity-overlay').style.display = 'none';
