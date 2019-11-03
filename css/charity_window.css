@@ -1,3 +1,6 @@
+* {
+    boz-sizing: border-box;
+}
 .title {
     margin-top: 50px;
     text-align: center;
@@ -5,35 +8,52 @@
     font-family: "Bradley Hand ITC";
     font-size: 30px
 }
-.spare {
-    text-align: center;
-    color: #9CEBF2;
-    font-size: 30px
-}
-.description {
-    text-align: center;
-    font-size: 40px
-}
-.money {
-    text-align: center;
-}
-.button {
-    background-color: #9CEBF2;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
 .logo {
     height: auto;
     width: auto;
     max-width: 150px;
     max-height: 150px;
 }
+.button {
+    background: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    /*max-width: 150px;*/
+    text-decoration: none;
+}
+
+.button figure {
+    margin: 0 0 15px;
+}
+
+.button figure img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    /*padding:1px;*/
+    /*border:1px solid #021a40;*/
+    /*border-radius: 50%;*/
+}
+
+.button .text {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1d368a;
+    margin: 0 0 15px;
+    font-size: 16px;
+}
+.button .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1d368a;
+    margin: 0 0 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
 
 .charity-window {
     position: fixed;
