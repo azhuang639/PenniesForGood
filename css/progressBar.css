@@ -4,55 +4,55 @@ h1{
 }
 
 .meter1Percent{
-    position: fixed;
-    right: 1355px;
-    top: 530px;
+    position: relative;
+    right: -40px;
+    top: 315px;
 }
 .meter2Percent{
-    position: fixed;
-    right: 1250px;
-    top: 530px;
+    position: relative;
+    right: -150px;
+    top: 280px;
 }
 .meter3Percent{
-    position: fixed;
-    right: 1140px;
-    top: 530px;
+    position: relative;
+    right: -259px;
+    top: 245px;
 }
 
 .meter1dollar{
-    position: fixed;
-    right: 1355px;
-    top: 145px;
+    position: relative;
+    right: -40px;
+    top: -180px;
 }
 .meter2dollar{
-    position: fixed;
-    right: 1250px;
-    top: 145px;
+    position: relative;
+    right: -150px;
+    top: -212px;
 }
 .meter3dollar{
-    position: fixed;
-    right: 1145px;
-    top: 145px;
+    position: relative;
+    right: -260px;
+    top: -245px;
 }
 
 
 .hungerLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
-    right: 1345px;
-    top: 510px;
+    position: relative;
+    right: -35px;
+    top: 395px;
 }
 .educationLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
-    right: 1230px;
-    top: 510px;
+    position: relative;
+    right: -130px;
+    top: 328px;
 }
 .healthLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
-    right: 1135px;
-    top: 510px;
+    position: relative;
+    right: -250px;
+    top: 362px;
 }
 
 
@@ -61,7 +61,7 @@ h1{
     width: 300px;
     position: relative;
     right: 100px;
-    top: 180px;
+    top: -100px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -89,7 +89,7 @@ h1{
     width: 300px;
     position: relative;
     left: 5px;
-    top: 140px;
+    top: -140px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -118,7 +118,7 @@ h1{
     width: 300px;
     position: relative;
     left: 113px;
-    top: 100px;
+    top: -180px;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
