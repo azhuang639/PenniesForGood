@@ -30,6 +30,7 @@
     "html/charity_window.html",
     "html/progressBar.html",
     "assets/penny.png",
+    "charities.json",
     "assets/arrow_sign.png"
   ]
 }
