@@ -1,3 +1,5 @@
+var donated = parseFloat(Math.ceil(price_val)) - price_val;
+
 function startup(x){
     document.getElementById('buy_logo').src = chrome.extension.getURL('assets/penny.png');
     document.getElementById("no_donate").addEventListener('click', closeBuyWindow);
