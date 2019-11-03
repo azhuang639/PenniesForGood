@@ -1,5 +1,5 @@
 //var counts = -1;
-var category = 0; //0, 1, 2
+// var category = 0; //0, 1, 2
 function startupCharity(){
     var charities;
     if(category===0) charities=education;
