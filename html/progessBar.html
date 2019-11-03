@@ -14,33 +14,51 @@
     <h2> Progress! </h2>
     <p>Check out our progress here!</p>
 
+<!--Labels for progress bars-->
+<p class = "hungerLabel">Hunger</p>
+<p class = "healthLabel">Health</p>
+<p class = "educationLabel">Education</p>
+
+
+
 <!--Charity 1-->
     <div class = "meter1">
-     <span style="width: 25%"></span>
+     <span id = "meter1" style="width: 100%" ></span>
     </div>
 
 <!--Charity 2-->
     <div class = "meter2">
-        <span style="width: 25%"></span>
+        <span id = "meter2" style="width: 25%"></span>
     </div>
 
 <!--Charity 3-->
     <div class = "meter3">
-        <span style="width: 25%"></span>
+        <span id = "meter3" style="width: 25%"></span>
     </div>
 
-<!--Charity 4-->
-    <div class = "meter4">
-        <span style="width: 25%"></span>
-    </div>
+<script>
+//sum of amounts raised for each charity
+    var char1sum = 3.0;
+    var char2sum = 0.7;
+    var char3sum = 1.9;
 
-<!--Charity 5-->
-    <div class = "meter5">
-        <span style="width: 25%"></span>
-    </div>
+    //goal for charities
+    var goal = 5.0;
 
+    //percent of goal raised
+    var percentChar1 = (char1sum/goal)*100;
+    var percentChar2 = (char2sum/goal)*100;
+    var percentChar3 = (char3sum/goal)*100;
+
+    document.getElementById('meter1').style.width= percentChar1 +"%";
+    document.getElementById('meter2').style.width= percentChar2 +"%";
+    document.getElementById('meter3').style.width= percentChar3 +"%";
+
+
+</script>
 
 
 
 </body>
+
 </html>
