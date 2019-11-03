@@ -63,16 +63,18 @@
     font-size: 16px;
 }
 .button1 .title {
-    font-weight: bold;
+    font-family: "Gill Sans MT", sans-serif;
+    /*font-weight: bold;*/
     text-transform: uppercase;
-    color: #1d368a;
+    color: black;
     margin: 0 0 15px;
     font-size: 20px;
     text-align: center;
+
 }
-.button1:hover {background-color: #3e8e41}
+.button1:hover {background-color: slategrey}
 .button1:active {
-    background-color: #3e8e41;
+    background-color: slategrey;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
