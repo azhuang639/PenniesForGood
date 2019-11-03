@@ -15,7 +15,7 @@
     color: black;
     font-family: "Times New Roman", Times serif;
     line-height: 30px;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -72,5 +72,11 @@
 .moneymoneymoney {
     text-align: center;
     color: black;
-    font-size: 45px
+    font-size: 55px
+}
+
+.moneyarrow {
+    width:10%;
+    height:10%;
+    margin-top: 10px;
 }

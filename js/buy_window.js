@@ -2,9 +2,11 @@ var donated = parseFloat(Math.ceil(price_val)) - price_val;
 
 function startup(x){
     document.getElementById('buy_logo').src = chrome.extension.getURL('assets/penny.png');
+    document.getElementById('arrow_sign').src = chrome.extension.getURL('assets/arrow_sign.png');
     document.getElementById("no_donate").addEventListener('click', closeBuyWindow);
     document.getElementById("yes_donate").addEventListener('click', insertCharityWindow);
-    document.getElementById("helpmepls").innerHTML = "$" + price_val + "-->" + Math.ceil(price_val) + ".00";
+    document.getElementById("helpmepls").innerHTML = "$" + price_val;
+    document.getElementById("helpmeplstoo").innerHTML = "$" + Math.ceil(price_val) + ".00";
 }
 
 function insertCharityWindow() {

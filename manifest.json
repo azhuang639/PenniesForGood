@@ -28,6 +28,7 @@
   "web_accessible_resources": [
     "html/buy_window.html",
     "html/charity_window.html",
-    "assets/penny.png"
+    "assets/penny.png",
+    "assets/arrow_sign.png"
   ]
 }
