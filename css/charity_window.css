@@ -31,58 +31,6 @@
     display:inline-block;
 }
 
-.button1 {
-    background: #fff;
-    border-radius: 6px;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    /*max-width: 150px;*/
-    text-decoration: none;
-}
-
-.button1 figure {
-    margin: 0 0 15px;
-}
-
-.button1 figure img {
-    height: 30vw;
-    width: 33vh;
-    max-width: 300px;
-    max-height: 300px;
-    /*height: auto;
-    width: auto;
-    max-width: 150px;
-    max-height: 150px;*/
-    /*padding:1px;*/
-    /*border:1px solid #021a40;*/
-    /*border-radius: 50%;*/
-}
-
-.button1 .text {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #1d368a;
-    margin: 0 0 15px;
-    font-size: 16px;
-}
-.button1 .title {
-    font-family: "Verdana", sans-serif;
-    /*font-weight: bold;*/
-    text-transform: uppercase;
-    color: black;
-    margin: 0 0 15px;
-    font-size: 20px;
-    text-align: center;
-
-}
-.button1:hover {background-color: slategrey}
-.button1:active {
-    background-color: slategrey;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
 .charity-window {
     position: fixed;
     background-color: #fff;
@@ -116,3 +64,111 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+#logo-holder {
+    position:relative; /*dimensions of image*/
+}
+#logo-holder .image {
+    max-height: 300px;
+    max-width: 300px;
+    width: 33vh;
+    height: 33vh;
+}
+#logo-holder .text {transition: opacity 0.3s ease-in-out;}
+#logo-holder .text {position:absolute; top:0; opacity:0;}
+#logo-holder .test_button {
+    background: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    /*max-width: 150px;*/
+    text-decoration: none;
+}
+
+#logo-holder .test_button figure {
+    margin: 0 0 15px;
+}
+
+#logo-holder .test_button figure img {
+    /*height: 33vh;*/
+    /*width: 33vh;*/
+    /*max-width: 100px;*/
+    /*max-height: 100px;*/
+}
+#logo-holder:hover figure {opacity:0;}
+#logo-holder:hover .text {opacity:1;}
+
+#button_arr1 {
+    width: 100%;
+    text-align: center;
+}
+
+
+#logo-holder1 {
+    position:relative; /*dimensions of image*/
+}
+#logo-holder1 .image {
+    max-height: 300px;
+    max-width: 300px;
+    width: 33vh;
+    height: 33vh;
+}
+#logo-holder1 .text {transition: opacity 0.3s ease-in-out;}
+#logo-holder1 .text {position:absolute; top:0; opacity:0;}
+#logo-holder1 .test_button {
+    background: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    /*max-width: 150px;*/
+    text-decoration: none;
+}
+
+#logo-holder1 .test_button figure {
+    margin: 0 0 15px;
+}
+
+#logo-holder1 .test_button figure img {
+    /*height: 33vh;*/
+    /*width: 33vh;*/
+    /*max-width: 100px;*/
+    /*max-height: 100px;*/
+}
+#logo-holder1:hover figure {opacity:0;}
+#logo-holder1:hover .text {opacity:1;}
+
+#logo-holder2 {
+    position:relative; /*dimensions of image*/
+}
+#logo-holder2 .image {
+    max-height: 300px;
+    max-width: 300px;
+    width: 33vh;
+    height: 33vh;
+}
+#logo-holder2 .text {transition: opacity 0.3s ease-in-out;}
+#logo-holder2 .text {position:absolute; top:0; opacity:0;}
+#logo-holder2 .test_button {
+    background: #fff;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    /*max-width: 150px;*/
+    text-decoration: none;
+}
+
+#logo-holder2 .test_button figure {
+    margin: 0 0 15px;
+}
+
+#logo-holder2 .test_button figure img {
+    /*height: 33vh;*/
+    /*width: 33vh;*/
+    /*max-width: 100px;*/
+    /*max-height: 100px;*/
+}
+#logo-holder2:hover figure {opacity:0;}
+#logo-holder2:hover .text {opacity:1;}
