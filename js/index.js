@@ -1,3 +1,4 @@
+//hi raymond
 let active;
 chrome.storage.local.get({active: true}, function(result) {
     active = result.active;
@@ -6,6 +7,7 @@ chrome.storage.local.get({active: true}, function(result) {
 trackPurchase();
 var price_val;
 var counts = -1;
+var category = 0; //1 or 2 ed,health,hung
 
 function trackPurchase() {
     let targetButton;
@@ -16,7 +18,17 @@ function trackPurchase() {
         return;
     }
 
-    if (url.includes('amazon.com') && !url.includes('amazon.com/gp')) {
+    if (url.includes('amazon.com') && !url.includes('buy')) {
+        targetCategories = document.title.split(":");
+        targetCategory = targetCategories[targetCategories.length-1]
+        console.log(targetCategory);
+        if (targetCategory === " Books")
+            category = 0;
+        else if (targetCategory === " Health & Household")
+            category = 1;
+        else if (targetCategory === " Prime Pantry")
+            category = 2;
+
         targetButton = document.getElementById('add-to-cart-button');
 
         if (targetButton){

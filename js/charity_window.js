@@ -1,5 +1,5 @@
 //var counts = -1;
-var category = 0; //0, 1, 2
+// var category = 0; //0, 1, 2
 function startupCharity(){
     var charities;
     if(category===0) charities=education;
@@ -78,7 +78,7 @@ function addSessionDonation() {
     var val = donated;
     // fourth variable
     chrome.storage.sync.get('sessionDonation', function (data) {
-        chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation))}, function() {
+        chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation)).toFixed(2)}, function() {
             alert("success adding money!");
             chrome.storage.sync.get('sessionDonation', function (data) {
                 alert("new total is: " + parseFloat(data.sessionDonation).toFixed(2));
@@ -93,7 +93,7 @@ function newTotal(){
 
     if (counts > -2) {
         chrome.storage.sync.get('education', function (data) {
-            chrome.storage.sync.set({'education': (Number(val) + Number(data.education))}, function() {
+            chrome.storage.sync.set({'education': (Number(val) + Number(data.education)).toFixed(2)}, function() {
                 alert("success adding money!");
                 chrome.storage.sync.get('education', function (data) {
                     alert("new total is: " + parseFloat(data.education).toFixed(2));
@@ -117,7 +117,7 @@ function newTotal2(){
 
     if (counts > -2) {
         chrome.storage.sync.get('health', function (data) {
-            chrome.storage.sync.set({'health': (Number(val) + Number(data.health))}, function() {
+            chrome.storage.sync.set({'health': (Number(val) + Number(data.health)).toFixed(2)}, function() {
                 alert("success adding money!");
                 chrome.storage.sync.get('health', function (data) {
                     alert("new total is: " + parseFloat(data.health).toFixed(2));
@@ -141,7 +141,7 @@ function newTotal3(){
 
     if (counts > -2) {
         chrome.storage.sync.get('hunger', function (data) {
-            chrome.storage.sync.set({'hunger': (Number(val) + Number(data.hunger))}, function() {
+            chrome.storage.sync.set({'hunger': (Number(val) + Number(data.hunger)).toFixed(2)}, function() {
                 alert("success adding money!");
                 chrome.storage.sync.get('hunger', function (data) {
                     alert("new total is: " + parseFloat(data.hunger).toFixed(2));
