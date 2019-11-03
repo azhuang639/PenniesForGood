@@ -4,6 +4,7 @@ h1{
 }
 
 .meter1Percent{
+<<<<<<< HEAD
     position: absolute;
     right: 187vh;
     top: 530px;
@@ -14,6 +15,8 @@ h1{
     top: 530px;
 }
 .meter3Percent{
+=======
+>>>>>>> c9ad03d6f69c93faa43463b9c2dd05e296af0cba
     position: fixed;
     right: 1355px;
     top: 530px;
@@ -30,6 +33,7 @@ h1{
 }
 
 .meter1dollar{
+<<<<<<< HEAD
     position: absolute;
     right: 187vh;
     top: 145px;
@@ -40,6 +44,8 @@ h1{
     top: 145px;
 }
 .meter3dollar{
+=======
+>>>>>>> c9ad03d6f69c93faa43463b9c2dd05e296af0cba
     position: fixed;
     right: 1355px;
     top: 145px;
