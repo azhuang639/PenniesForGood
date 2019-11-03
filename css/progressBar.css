@@ -4,33 +4,33 @@ h1{
 }
 
 .meter1Percent{
-    position: fixed;
+    position: absolute;
     right: 187vh;
     top: 530px;
 }
 .meter2Percent{
-    position: fixed;
+    position: absolute;
     right: 177vh;
     top: 530px;
 }
 .meter3Percent{
-    position: fixed;
+    position: absolute;
     right: 167vh;
     top: 530px;
 }
 
 .meter1dollar{
-    position: fixed;
+    position: absolute;
     right: 187vh;
     top: 145px;
 }
 .meter2dollar{
-    position: fixed;
+    position: absolute;
     right: 177vh;
     top: 145px;
 }
 .meter3dollar{
-    position: fixed;
+    position: absolute;
     right: 167vh;
     top: 145px;
 }
@@ -38,19 +38,19 @@ h1{
 
 .hungerLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
+    position: absolute;
     right: 187vh;
     top: 510px;
 }
 .educationLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
+    position: absolute;
     right: 175vh;
     top: 510px;
 }
 .healthLabel{
     color: rgba(0, 29, 9, 0.98);
-    position: fixed;
+    position: absolute;
     right: 167vh;
     top: 510px;
 }
@@ -59,7 +59,7 @@ h1{
 .meter1 {
     height: 20px;  /* Can be anything */
     width: 300px;
-    position: fixed;
+    position: absolute;
     right: 165vh;
     top: 330px;
     background: #555;
@@ -87,7 +87,7 @@ h1{
 .meter2 {
     height: 20px;  /* Can be anything */
     width: 300px;
-    position: fixed;
+    position: absolute;
     right: 155vh;
     top: 330px;
     background: #555;
@@ -116,7 +116,7 @@ h1{
 .meter3 {
     height: 20px;  /* Can be anything */
     width: 300px;
-    position: fixed;
+    position: absolute;
     right: 145vh;
     top: 330px;
     background: #555;
