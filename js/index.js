@@ -20,11 +20,11 @@ function trackPurchase() {
 
     if (url.includes('amazon.com') && !url.includes('amazon.com/gp')) {
         targetCategories = document.title.split(":");
-        targetCategory = targetCategories[targetCategories.length-1]
+        targetCategory = targetCategories[targetCategories.length-1];
         console.log(targetCategory);
         if (targetCategory == " Books")
             category = 0;
-        else if (targetCategory == " Health & Household")
+        else if (targetCategory == " Health & Personal Care" || targetCategory == " Health & Household")
             category = 1;
         else if (targetCategory == " Prime Pantry")
             category = 2;
