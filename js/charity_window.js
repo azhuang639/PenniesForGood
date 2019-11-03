@@ -21,7 +21,7 @@ function addMoney(){
     var submitThreeLink = document.getElementById('thirdButton');
     submitThreeLink.onclick = function () {
         newTotal();
-    }
+    }l
     /*
     document.getElementById('get').onclick = function () {
         chrome.storage.sync.get('myLine', function (data) {
