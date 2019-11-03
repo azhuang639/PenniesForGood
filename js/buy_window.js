@@ -6,7 +6,6 @@ function startup(x){
 }
 
 function insertCharityWindow() {
-    closeBuyWindow();
     console.log('HEPL');
     fetch(chrome.extension.getURL('html/charity_window.html'))
         .then(response => response.text())
