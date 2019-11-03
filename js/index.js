@@ -23,6 +23,7 @@ function trackPurchase() {
         targetCategory = targetCategories[targetCategories.length-1];
         console.log(targetCategory);
         if (!category) {
+            category = 0;
             if (targetCategory == " Office Products")
                 category = 0;
             else if (targetCategory == " Health & Personal Care" || targetCategory == " Health & Household")
