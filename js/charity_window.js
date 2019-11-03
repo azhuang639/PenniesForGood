@@ -49,16 +49,21 @@ function addMoney(){
     var submitOneLink = document.getElementById('firstButton');
     submitOneLink.onclick = function () {
         newTotal();
+        addSessionDonation();
     }
     var submitTwoLink = document.getElementById('secondButton');
     submitTwoLink.onclick = function () {
         newTotal2();
+        addSessionDonation();
     }
     var submitThreeLink = document.getElementById('thirdButton');
     submitThreeLink.onclick = function () {
         newTotal3();
-    }
+        addSessionDonation();
+    }    
+}
 
+function addSessionDonation() {
     // fourth variable
     chrome.storage.sync.get('sessionDonation', function (data) {
         chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation))}, function() {
@@ -75,20 +80,20 @@ function newTotal(){
     var val = donated;
 
     if (counts > -2) {
-        chrome.storage.sync.get('sessionDonation', function (data) {
-            chrome.storage.sync.set({'sessionDonation': (Number(val) + Number(data.sessionDonation))}, function() {
+        chrome.storage.sync.get('education', function (data) {
+            chrome.storage.sync.set({'education': (Number(val) + Number(data.education))}, function() {
                 alert("success adding money!");
-                chrome.storage.sync.get('sessionDonation', function (data) {
-                    alert("new total is: " + parseFloat(data.sessionDonation).toFixed(2));
+                chrome.storage.sync.get('education', function (data) {
+                    alert("new total is: " + parseFloat(data.education).toFixed(2));
                 })
             })
         })
     }
     else {
-        chrome.storage.sync.set({'sessionDonation': val }, function () {
+        chrome.storage.sync.set({'education': val }, function () {
             alert("success!");
-            chrome.storage.sync.get('sessionDonation', function (data) {
-                alert("total is: " + parseFloat(data.sessionDonation).toFixed(2));
+            chrome.storage.sync.get('education', function (data) {
+                alert("total is: " + parseFloat(data.education).toFixed(2));
             })
         });
     }
@@ -174,7 +179,7 @@ function insertThankWindow(){
 
 }
 
-const sessionDonation = [
+const education = [
     {
         name: 'UNICEF',
         description: 'UNICEF works in over 190 countries and territories to save children’s lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence. And we never give up.',
@@ -182,17 +187,17 @@ const sessionDonation = [
     },
     {
         name: 'ProLiteracy',
-        description: 'ProLiteracy, the largest adult literacy and basic sessionDonation membership organization in the nation, believes that a safer, stronger, and more sustainable society starts with an educated adult population. For more than 60 years, ProLiteracy has been working across the globe to change lives and communities through the power of literacy.',
+        description: 'ProLiteracy, the largest adult literacy and basic education membership organization in the nation, believes that a safer, stronger, and more sustainable society starts with an educated adult population. For more than 60 years, ProLiteracy has been working across the globe to change lives and communities through the power of literacy.',
         url: 'https://cdn1.imggmi.com/uploads/2019/11/3/31cdb5d508f07e3766c8c95d9caab657-full.png'
     },
     {
         name: 'Room to Read',
-        description: 'Room to Read seeks to transform the lives of millions of children in low-income communities by focusing on literacy and gender equality in sessionDonation.',
+        description: 'Room to Read seeks to transform the lives of millions of children in low-income communities by focusing on literacy and gender equality in education.',
         url: 'https://cdn1.imggmi.com/uploads/2019/11/3/6bb6e84d6e3aec39476cca6d35044eca-full.png',
     },
     {
         name:'Pencils of Promise',
-        description:'We believe every child should have access to quality sessionDonation. We build schools and provide quality sessionDonational programming to increase literacy rates in Ghana, Guatemala, Laos and Nicaragua.',
+        description:'We believe every child should have access to quality education. We build schools and provide quality sessionDonational programming to increase literacy rates in Ghana, Guatemala, Laos and Nicaragua.',
         url: 'https://cdn1.imggmi.com/uploads/2019/11/3/868a7bab444f22e9f9c13d36f30bf6fb-full.png'
     }
 ];
@@ -204,7 +209,7 @@ const health = [
     },
     {
         name: 'BasicNeeds',
-        description: '80% of people facing mental health problems live in developing countries, where fewer than 1 in 5 get any treatment. Many endure prejudice and abuse and are prevented from exercising choice, pursuing opportunities and planning for the future. BasicNeeds works with local communities in Africa and Asia to tackle stigma, improve access to treatment and support, and provide opportunities for people experiencing mental illness so that they can return to work or continue their sessionDonation and fulfil their potential.',
+        description: '80% of people facing mental health problems live in developing countries, where fewer than 1 in 5 get any treatment. Many endure prejudice and abuse and are prevented from exercising choice, pursuing opportunities and planning for the future. BasicNeeds works with local communities in Africa and Asia to tackle stigma, improve access to treatment and support, and provide opportunities for people experiencing mental illness so that they can return to work or continue their education and fulfil their potential.',
         url: 'https://cdn1.imggmi.com/uploads/2019/11/3/18247459f7d65c6f013455558ab396a5-full.png'
     },
     {
@@ -214,7 +219,7 @@ const health = [
     },
     {
         name:'Mothers2Mothers',
-        description:'Mothers2Mothers\' mission is to impact the health of mothers by putting them at the heart of improving reproductive, maternal, newborn, child, and adolescent health. Our Mentor Mother Model empowers mothers living with HIV, through sessionDonation and employment, as role models to help other women and their families access essential services and medical care.',
+        description:'Mothers2Mothers\' mission is to impact the health of mothers by putting them at the heart of improving reproductive, maternal, newborn, child, and adolescent health. Our Mentor Mother Model empowers mothers living with HIV, through education and employment, as role models to help other women and their families access essential services and medical care.',
         url: 'http://s12982.pcdn.co/wp-content/uploads/2014/03/CMYK_Logo.jpg'
     }
 ];
