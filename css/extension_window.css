@@ -1,7 +1,7 @@
 body {
     width: 320px;
     height: 460px;
-    background-color: #fff1e3;
+    background-color: rgba(246, 249, 244, 0.41);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background-color: #ebd1be;
 }
 
 header * {
@@ -32,17 +32,19 @@ header li {
 
 
 .title {
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
     color: saddlebrown;
     font-family: "Bradley Hand ITC";
+    font-weight: bold;
     font-size: 30px
 }
 
 .text {
     text-align: center;
-    color: black;
-    font-family: "Times New Roman", Times serif;
+    color: #262626;
+    /*font-family: "Times New Roman", Times serif;*/
+    font-size: 14px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -66,12 +68,13 @@ p {
 
 .pause {
     background-color: white;
-    border: 1px solid darkred;
-    color: darkred;
+    border: 1px solid #565656;
+    color: #565656;
     padding: 8px;
     width: 300px;
     text-align: center;
     font-family: "Gill Sans MT";
+    font-weight: bold;
     font-size: 13px;
     margin: 0 auto;
     border-radius: 8px;
@@ -81,19 +84,20 @@ p {
 }
 
 .pause:hover {
-    background-color: darkred;
+    background-color: #565656;
     color: white;
 }
 
 
 .resume {
     background-color: white;
-    border: 1px solid green;
-    color: green;
+    border: 1px solid #565656;
+    color: #565656;
     width: 300px;
     padding: 8px;
     text-align: center;
     font-family: "Gill Sans MT";
+    font-weight: bold;
     font-size: 13px;
     margin: 0 auto;
     border-radius: 8px;
@@ -103,19 +107,59 @@ p {
 }
 
 .resume:hover {
-    background-color: green;
+    background-color: #565656;
     color: white;
 }
 
 
-.amount {
+.amountS {
     text-align: center;
-    color: green;
-    background-color: lightyellow;
+    position: relative;
+    top: -15px;
+    font-weight: bold;
+    font-family: "Gill Sans MT";
+    font-size: 15px;
+    color: #47abb7;
+    /*background-color: #6d75bc;*/
     margin: 0px 15px;
 
 }
+.amountSh {
+    text-align: center;
+    position: relative;
+    top: -15px;
+    font-weight: bold;
+    font-family: "Gill Sans MT";
+    font-size: 15px;
+    color: #3c919b;
+    /*background-color: #6d75bc;*/
+    margin: 0px 15px;
 
+}
+.amountTh {
+    text-align: center;
+    position: relative;
+    top: -25px;
+    font-family: "Gill Sans MT";
+    font-size: 15px;
+    font-weight: bold;
+    color: #3c919b;
+    /*background-color: #6d75bc;*/
+    margin: 0px 15px;
+
+}
+.amountT {
+    text-align: center;
+    position: relative;
+    top: -25px;
+    font-family: "Gill Sans MT";
+    font-size: 15px;
+    font-weight: bold;
+    color: #47abb7;
+    /*background-color: #6d75bc;*/
+    margin: 0px 15px;
+
+}
 .stats {
     border-radius: 15px;
     padding: 5px;
@@ -127,14 +171,15 @@ p {
     font-weight: bold;
 }
 
-.button {
+.buttonL {
     background-color: white;
-    border: 1px solid darkblue;
-    color: darkblue;
+    border: 1px solid #b06841;
+    color: #b06841;
     padding: 8px;
     width: 300px;
     text-align: center;
     font-family: "Gill Sans MT";
+    font-weight: bold;
     font-size: 13px;
     margin: auto 10px;
     border-radius: 8px;
@@ -143,7 +188,29 @@ p {
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: darkblue;
+.buttonL:hover {
+    background-color: #b06841;
+    color: white;
+}
+
+.buttonC {
+    background-color: white;
+    border: 1px solid #54bbc6;
+    color: #54bbc6;
+    padding: 8px;
+    width: 300px;
+    text-align: center;
+    font-family: "Gill Sans MT";
+    font-weight: bold;
+    font-size: 13px;
+    margin: auto 10px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+.buttonC:hover {
+    background-color: #8be5e3;
     color: white;
 }

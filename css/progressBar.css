@@ -1,11 +1,14 @@
 .title{
     position: relative;
-    right: -470px;
-    top: -5px;
-    font-size: 30px;
-    letter-spacing: 6px;
+    right: -560px;
+    top: 0px;
+    font-family: "Bradley Hand ITC";
+    font-weight: bold;
+    font-size: 35px;
+    color: saddlebrown;
 
 }
+
 
 
 .goal{
@@ -60,7 +63,7 @@
 
 
 .hungerLabel{
-    color: rgba(8, 63, 15, 0.98);
+    color: rgba(145, 86, 53, 0.98);
     position: relative;
     right: -472px;
     font-weight: bold;
@@ -68,7 +71,7 @@
     top: 458px;
 }
 .educationLabel{
-    color: rgba(126, 109, 65, 0.98);
+    color: rgba(113, 113, 113, 0.98);
     position: relative;
     right: -615px;
     font-weight: bold;
@@ -76,7 +79,7 @@
     top: 383px;
 }
 .healthLabel{
-    color: rgba(30, 45, 108, 0.98);
+    color: rgba(59, 157, 169, 0.98);
     position: relative;
     right: -790px;
     font-weight: bold;
@@ -104,8 +107,8 @@
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
-    background-color: #228019;
-    background-image: linear-gradient(to bottom, #adf127, #1af367);
+    background-color: #8a5232;
+    background-image: linear-gradient(to bottom, #eb9063, #ba6448);
     box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
@@ -132,8 +135,8 @@
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
-    background-color: #c2ca26;
-    background-image: linear-gradient(to bottom, #ebf16a, #e5cc6b);
+    background-color: #717171;
+    background-image: linear-gradient(to bottom, #f9f4f2, #d8d2ce);
     box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
@@ -161,8 +164,8 @@
     display: block;
     height: 100%;
     border-radius: 20px 8px 8px 20px;
-    background-color: #6d75bc;
-    background-image: linear-gradient(to bottom, #6dbef1, #4b87f9);
+    background-color: #48b2b7;
+    background-image: linear-gradient(to bottom, #8be5e3, #3ca0a9);
     box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
     inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
