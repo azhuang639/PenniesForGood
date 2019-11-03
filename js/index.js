@@ -9,8 +9,9 @@ var price_val;
 var counts = -1;
 var category; //1 or 2 ed,health,hung
 
+var targetButton;
+
 function trackPurchase() {
-    let targetButton;
     var price;
 
     const url = location.href;
@@ -23,10 +24,10 @@ function trackPurchase() {
         targetCategory = targetCategories[targetCategories.length-1];
         console.log(targetCategory);
         if (!category) {
-            category = 0;
+            category = 2;
             if (targetCategory == " Office Products")
                 category = 0;
-            else if (targetCategory == " Health & Personal Care" || targetCategory == " Health & Household")
+            else if (targetCategory == " Health & Personal Care" || targetCategory == " Health & Household" || targetCategory == " Sports & Outdoors")
                 category = 1;
             else if (targetCategory == " Grocery & Gourmet Food")
                 category = 2;
