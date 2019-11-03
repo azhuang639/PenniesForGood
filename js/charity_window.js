@@ -9,7 +9,7 @@ function addMoney(){
     var submitLink = document.getElementById('firstButton');
     submitLink.onclick = function () {
         counts += 1;
-        var val = donated
+        var val = donated;
         
         if (counts > -2) {
             chrome.storage.sync.get('myLine', function (data) {

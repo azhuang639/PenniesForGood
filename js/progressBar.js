@@ -1,7 +1,7 @@
 //sum of amounts raised for each charity
-var char1sum = (6.89).toFixed(2);
-var char2sum = (3.39).toFixed(2);
-var char3sum = (1.90).toFixed(2);
+var char1sum = (4.89).toFixed(2);
+var char2sum = (1.19).toFixed(2);
+var char3sum = (0.80).toFixed(2);
 
 //goal for charities
 var goal = 5.00;
@@ -28,6 +28,7 @@ if(percentChar3 > 100){
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
 
     //assigning values to the width (height) of the inner progress bar
     document.getElementById('meter1').style.width= percentChar1Bar +"%";
