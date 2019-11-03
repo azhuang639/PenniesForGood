@@ -14,6 +14,17 @@
     max-width: 150px;
     max-height: 150px;
 }
+
+#button_arr
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+
 .button1 {
     background: #fff;
     border-radius: 6px;

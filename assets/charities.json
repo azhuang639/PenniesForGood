@@ -1,7 +1,8 @@
 [
   {
     "name": "UNICEF",
-    "description": "",
+    "description": "UNICEF works in over 190 countries and territories to save children’s lives, to defend their rights, and to help them fulfil their potential, from early childhood through adolescence. And we never give up.",
+    "category": "education",
     "url": "https://www.un.org/ruleoflaw/wp-content/uploads/2015/04/unlogo.png"
   }
 ]
