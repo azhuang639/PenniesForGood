@@ -1,3 +1,4 @@
+![alt text](https://i.ibb.co/Cmhhgtv/logo1.png)
 # PenniesForGood
 	
 PenniesForGood is a chrome extension that interacts with online purchasing retailers and encourages microdonations to nonprofits and charities.
@@ -37,3 +38,12 @@ Some of us had never coded in HTML/Javascript before, so it was a completely new
 # What's next?
 	
 We want to implement a user login system to keep track of each user’s donations. We want to increase a bigger database of charities and we want to be able to spread it to far more different online platforms. We also hope to improve the user interface to make it more user friendly and cleaner-looking.
+
+# Screenshots
+
+![alt text](https://i.ibb.co/zZCt4XT/penny1.png)
+![alt text](https://i.ibb.co/8zJ33X4/penny2.png)
+![alt_text](https://i.ibb.co/qgzNV5T/penny2-1.png)
+![alt_text](https://i.ibb.co/D5VtpLx/penny3.png)
+![alt_text](https://i.ibb.co/GC6FjwL/penny4.png)
+![alt_text](https://i.ibb.co/WgmWg7z/penny5.png)
